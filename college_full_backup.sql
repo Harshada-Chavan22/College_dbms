@@ -42,6 +42,7 @@ CREATE TABLE `students_with_columns` (
 
 LOCK TABLES `students_with_columns` WRITE;
 /*!40000 ALTER TABLE `students_with_columns` DISABLE KEYS */;
+INSERT INTO `students_with_columns` VALUES (1,'Harshada Chavan',22,'Computer Engineering','harshada@gmail.com','2026-03-03'),(2,'Mohini Patil',22,'ENTC','mohini@gmail.com','2026-03-03'),(3,'Rohit Lohar',20,'Computer Engineering','rohit@gmail.com','2026-03-03'),(4,'Priti Sharma',23,'Mechanical Engineering','priti@gmail.com','2026-03-03'),(5,'Gauri Badgujar',21,'Civil Engineering','gauri@gmail.com','2026-03-03');
 /*!40000 ALTER TABLE `students_with_columns` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -58,4 +59,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-03 22:40:55
+-- Dump completed on 2026-03-03 23:26:41
