@@ -18,6 +18,33 @@ USE `college`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `courses`
+--
+
+DROP TABLE IF EXISTS `courses`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `courses` (
+  `course_id` int(11) NOT NULL,
+  `course_name` varchar(50) NOT NULL,
+  `fee` int(11) DEFAULT '10000',
+  `instructor_name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`course_id`),
+  UNIQUE KEY `course_name` (`course_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `courses`
+--
+
+LOCK TABLES `courses` WRITE;
+/*!40000 ALTER TABLE `courses` DISABLE KEYS */;
+INSERT INTO `courses` VALUES (1,'CSE',10000,NULL),(2,'DS',5000,NULL),(3,'IT',6000,NULL),(4,'ENTC',4000,NULL);
+/*!40000 ALTER TABLE `courses` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `students_with_columns`
 --
 
@@ -59,4 +86,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-04 17:38:13
+-- Dump completed on 2026-03-04 18:11:43
